@@ -19,6 +19,4 @@ let planetInformation = {
     "probes_and_explorers": "All of humanity."
 };
 
-module.exports.outputTo = () => {
-
-};
+module.exports.getPlanetInfo = () => planetInformation;
