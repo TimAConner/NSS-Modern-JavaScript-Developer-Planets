@@ -1,0 +1,11 @@
+<h1>{{name}}, discovered {{yearDiscovered}}</h1>
+<p>Mass: {{mass}}</p>
+<p>Size: {{size}}</p>
+{{#each distanceFromSun}}
+  <p>Distance: {{@key}}: {{this}}</p>
+{{/each}}
+{{#each atmosphereComposition}}
+ <p>{{@key}}: {{this}}</p>
+{{/each}}
+<p>Satellites: {{satellite}}</p>
+<p>Probes & Explorers: {{probesAndExplorers}}</p>
