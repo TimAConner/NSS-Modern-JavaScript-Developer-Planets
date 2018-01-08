@@ -5,6 +5,15 @@ This was Javascript practice done while attending the [Nashville Software School
 ## Synopsis
 You'll be creating a web page that will display important scientific data about all eight planets in our solar system. The information about each planet will be separate modules.
 - [ ]  Each module will export a single function named `outputTo` that will accept a single argument. That argument's value will be the DOM element reference into which it will insert information about a planet.
+    - [ ] Earth
+    - [ ] Mercury
+    - [ ] Venus
+    - [ ] Mars
+    - [ ] Jupiter
+    - [ ] Saturn
+    - [ ] Uranus
+    - [ ] Neptune
+
 
     ```js
     function outputTo(domElement) {
