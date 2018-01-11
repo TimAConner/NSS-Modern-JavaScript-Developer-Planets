@@ -1,11 +1,15 @@
-<h1>{{name}}, discovered {{yearDiscovered}}</h1>
-<p>Mass: {{mass}}</p>
-<p>Size: {{size}}</p>
-{{#each distanceFromSun}}
-  <p>Distance: {{@key}}: {{this}}</p>
-{{/each}}
-{{#each atmosphereComposition}}
- <p>{{@key}}: {{this}}</p>
-{{/each}}
-<p>Satellites: {{satellite}}</p>
-<p>Probes & Explorers: {{probesAndExplorers}}</p>
+<div class="card mt-3" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{name}}, discovered {{yearDiscovered}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Mass: {{mass}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Size: {{size}}</h6>
+    {{#each distanceFromSun}}
+       <p class="card-text">Distance: {{@key}}: {{this}}</p>
+    {{/each}}
+    {{#each atmosphereComposition}}
+       <p class="card-text">Distance: {{capitalize @key}}: {{this}}</p>
+    {{/each}}
+    <h6 class="card-subtitle mb-2 text-muted">Satellites: {{satellite}}</h6>
+    <h6 class="card-subtitle mb-2 text-muted">Probes & Explorers: {{probesAndExplorers}}</h6>
+  </div>
+</div>

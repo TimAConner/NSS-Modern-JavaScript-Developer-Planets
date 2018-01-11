@@ -2,7 +2,6 @@
 
 
 const view = require("./view");
-const helper = require("./helper");
 
 
 const earth = require("./earth");
